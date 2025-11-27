@@ -326,4 +326,62 @@ h6,
         height: 55vh;       /* más pequeño en celular */
     }
 }
+/* Ajuste general del logo */
+.navbar-brand img {
+    height: 60px;          /* Ajusta la altura del logo */
+    width: auto;           /* Mantiene proporción */
+    object-fit: contain;   /* Evita deformaciones */
+}
+
+/* Para pantallas grandes */
+@media (min-width: 992px) {
+    .navbar-brand img {
+        height: 80px;      /* Logo más grande en desktop */
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 991px) {
+    .navbar-brand img {
+        height: 55px;      /* Logo un poco más pequeño en móvil */
+    }
+}
+/* Logo imagen */
+.navbar-logo {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Texto del logo */
+.navbar-logo-text {
+    color: #ffffff;
+    font-size: 1.8rem;     /* Más grande */
+    font-weight: 800;      /* Súper negrita */
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif; /* Elegante y moderna */
+    letter-spacing: 1px;   /* Un poco más de estilo */
+}
+
+/* Desktop (por si lo usas luego) */
+@media (min-width: 992px) {
+    .navbar-logo {
+        height: 65px;
+    }
+    .navbar-logo-text {
+        font-size: 2rem;
+    }
+}
+
+/* Móvil */
+@media (max-width: 991px) {
+    .navbar-logo {
+        height: 50px;
+    }
+    .navbar-logo-text {
+        font-size: 1.6rem;
+    }
+}
+
+
 
